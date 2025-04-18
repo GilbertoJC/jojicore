@@ -1,0 +1,455 @@
+
+@font-face{
+    font-family: 'At aero';
+    src:url("/assets/fonts/at-aero-font-family-1743326293-0/AtAero-Air.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: '';
+    font-family: "At aero";
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+#container{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    /* margin-top: 40px; */
+    margin-bottom: 20px;
+    min-height: 600px;
+}
+
+#header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+
+}
+
+#logotipo h1{
+    margin-top: -5px;
+}
+
+#logotipo h1 a{
+    /* flex-grow: 1; */
+    flex-basis:25% ;
+    font-size: 45px;
+    padding: 10px;
+    margin-left: 20px;
+    color: #555;
+    text-shadow: 1px 1px 0px #ccc;
+}
+
+#logotipo h1 a{
+    font-weight: 400;
+    font-size: 45px;
+    color: #555;
+
+}
+
+#menu{
+    flex-grow: 1;
+    flex-basis:35% ;
+    height: 100%;
+    padding:0 10px;
+}
+
+#menu ul{
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 35px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#menu a{
+    text-transform: uppercase;
+    color: #444;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px;
+    transition: all 300ms;
+}
+
+#menu a span:hover{
+    padding: 5px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+} 
+
+#menu .button{
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    position: relative;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(98, 17, 17), rgb(22, 22, 120), rgb(78, 74, 76), blue, rgb(106, 87, 87), blue, rgb(114, 62, 90), blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(10px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.container-social{
+    /* flex-grow: 1; */
+    flex-basis:15% ;
+    height: 100%;
+    margin-top: 8px;
+    margin-right: 20px;
+    padding:0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* estilos de contenedor general */
+#content{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilos de la primera pagina */
+
+.first-page{
+    width: 75%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.first-page .texto{
+    width: 60%;
+    margin: 0 35px 0 20px;
+}
+
+.first-page  .texto-largo{
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.first-page  .texto-corto{
+    width: 100%;
+    font-weight: 400;
+    font-size: 28px;
+    color: #555;
+}
+
+/* estilos de la segunda pagina */
+
+.second-page{
+    width: 75%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    transition: all 4s;
+}
+
+.abajo .p1{
+    animation: mover-izquierda-derecha  1s 1;
+    animation-fill-mode:forwards;
+}
+@keyframes mover-izquierda-derecha {
+    from{
+        transform: translateX(-800px);
+        color: white;
+        font-size: 3px;
+    }
+    to{
+        transform: translateX(15px)
+    }
+}
+
+.abajo .p2{
+    animation: mover-derecha-izquierda  2s 1;
+    animation-fill-mode:forwards;
+}
+@keyframes mover-derecha-izquierda {
+    from{
+        transform: translateX(2000px);
+        color: white;
+        font-size: 3px;
+    }
+    to{
+        transform: translateX(20px)
+    }
+}
+
+.abajo .p3{
+   animation: mover-derechas-izquierda  3s 1;
+    animation-fill-mode:forwards;
+}
+@keyframes mover-derechas-izquierda {
+    from{
+        transform: translateX(2000px);
+        color: white;
+        font-size: 3px;
+    }
+    to{
+        transform: translateX(-50px)
+    }
+}
+
+.second-page .p1{
+    text-align: left;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-weight: 350;
+}
+
+.second-page .p2{
+    font-style: italic;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-weight: 350;
+}
+
+.second-page .p3{
+    text-align: right;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-weight: 350;
+}
+
+/* estilos de la tercer pagina */
+
+.third-page{
+    width: 75%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.third-page .presentation{
+    /* border: 10px solid black; */
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.third-page .presentation .video{
+    margin: 3%;
+    height: 100%;
+}
+
+.third-page .boton{
+    margin-top: 45px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 7px auto;
+    font-size: 40px;
+    color: #555;
+    letter-spacing: 2px;
+}
+
+
+.third-page .boton a{
+    border: 1px solid rgb(101, 98, 98);
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 40px;
+    font-weight: 350;
+    color: black;
+    letter-spacing: 2px;
+    transition: all 300ms;
+}
+
+.third-page .boton a:hover{
+   
+    background: black;
+    padding: 5px 16px;
+    margin: 7px auto;
+    font-size: 41px;
+    color: white;
+}
+
+/* estilos cuarta pagina */
+
+
+.fourth-page{
+    width: 75%;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.fourth-page__principal{
+    margin: 25px;
+    width: 55%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 40px;
+    
+
+}
+
+
+.fourth-page__principal .contenido h3{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+
+.fourth-page__principal .contenido p{
+    font-size: 30px;
+    text-align:justify;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+
+.fourth-page__principal .contenido span{
+    font-size: 30px;
+    text-align:justify;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+
+.fourth-page__principal .contenido{
+    margin-bottom: 30px;
+}
+
+.fourth-page__principal .link{
+    
+    
+    margin: 7px auto;
+    font-size: 40px;
+    color: #555;
+    letter-spacing: 2px;
+
+    
+    
+}
+
+
+.fourth-page__principal .link a{
+    border: 1px solid rgb(101, 98, 98);
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 40px;
+    font-weight: 350;
+    color: black;
+    letter-spacing: 2px;
+    transition: all 300ms;
+}
+
+
+.fourth-page__principal .link a:hover{
+   
+    background: black;
+    padding: 5px 16px;
+    margin: 7px auto;
+    font-size: 41px;
+    color: white;
+}
+
+.readMore a{
+    color: black;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+

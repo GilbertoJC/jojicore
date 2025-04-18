@@ -1,0 +1,149 @@
+.link__portfolio::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-left: 10px;
+    background-color: black;
+    
+    
+} 
+
+.link__portfolio::before{
+    content: '';
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 3px;
+    margin-left: 10px;
+    background-color: transparent;    
+} 
+
+.proyecto1{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 60px;    
+}
+
+.description{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.proyecto1 .description h3{
+    font-size: 35px;
+}
+
+.proyecto1 .description p{
+    font-size: 18px;
+    color: #555;
+}
+
+
+.proyecto2{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 60px;    
+}
+
+.proyecto2 .video{
+    margin-left: 25%;
+}
+
+.proyecto2 .description2{
+    order: 1;
+}
+
+.proyecto2 .video{
+    order: 2;
+}
+
+.description2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.proyecto2 .description2 h3{
+    font-size: 35px;
+}
+
+.proyecto2 .description2 p{
+    font-size: 18px;
+    color: #555;
+}
+
+
+
+.proyecto3{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 60px;    
+}
+
+.description3{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.proyecto3 .description3 h3{
+    font-size: 35px;
+}
+
+.proyecto3 .description3 p{
+    font-size: 18px;
+    color: #555;
+}
+
+
+.proyecto4{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 60px;    
+}
+
+.proyecto4 .video{
+    margin-left: 25%;
+}
+
+.proyecto4 .description4{
+    order: 1;
+}
+
+.proyecto4 .video{
+    order: 2;
+}
+
+.description4{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.proyecto4 .description4 h3{
+    font-size: 35px;
+}
+
+.proyecto4 .description4 p{
+    font-size: 18px;
+    color: #555;
+}

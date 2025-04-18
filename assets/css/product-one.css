@@ -1,0 +1,55 @@
+
+/* estilos de contenedor general */
+#content{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.articleone{
+    width: 85%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.articletwo{
+    width: 85%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.articlethree{
+    width: 85%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.articlefour{
+    width: 85%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}

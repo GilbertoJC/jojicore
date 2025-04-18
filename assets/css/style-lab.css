@@ -1,0 +1,22 @@
+
+.link__lab::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-left: 10px;
+    background-color: black;
+    
+    
+} 
+
+.link__lab::before{
+    content: '';
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 3px;
+    margin-left: 10px;
+    background-color: transparent;    
+} 

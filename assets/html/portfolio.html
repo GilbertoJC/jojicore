@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles-portfolio.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
+    <title>jojicore</title>
+</head>
+<body>
+<!-- inicio container -->
+<div id="container">
+    <!-- Inicio de Cabecera -->
+    <header id="header">
+        <!-- <div class="wrap"> -->
+            <div id="logotipo">
+                <h1><a href="/index.html">jojicore</a></h1>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="/assets/html/Lab.html"><span>Lab</span></a></li>
+                    <li><a class="link__portfolio" href="#"><span>Portfolio</span> </a></li>
+                    <li><a href="/assets/html/blog.html"><span>Blog</span></a></li>
+                    <li><a href="/assets/html/aboutme.html"><span>About me</span></a></li>
+                    <li><a   class="button" href="/assets/html/start-proyect.html">Start a project</a></li>
+                </ul>
+            </nav>
+            <!-- REDES   SOCIALES -->
+            <div class="container-social">
+                <div class="fiverr">
+                    <a href="https://www.fiverr.com/jojicore?public_mode=true" class="icon" target="_blank"><img src="/assets/img/icon/113-fiverr_social-1024.webp" alt="" width="23px"></a>
+                </div>
+                <!-- <div class="youtube">
+                    <a href="https://www.youtube.com/@jojicore" class="icon" target="_blank"><img id="iconos" src="/assets/img/icon/social.png" alt="icono youtube" width="20px"></a>
+                </div> -->
+                <div class="twitter">
+                    <a href="https://www.instagram.com/jojicore" class="icon" target="_blank"><img src="/assets/img/icon/instagram.png" alt="" width="21px"></a>
+                </div>
+                <!-- <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/jojicore" class="icon"  target="_blank"><img src="/assets/img/icon/linkedin-logo.png" alt="" width="20px"></a>
+                </div> -->
+                <div class="upwork">
+                    <a href="https://www.upwork.com/freelancers/~01dc54f6a238534526?mp_source=share" class="icon" target="_blank"><img src="/assets/img/icon/square-upwork.png" alt="" width="21px"></a>
+                </div>
+            </div>
+        
+    </header>
+    <!-- Fin de Cabecera -->
+
+    <!-- Inicio contenido -->
+    <section id="content">
+        <article class="proyecto1">
+            <video class="video" width="300px" controls loop onmouseover="this.play()" onmouseout="this.pause();" muted>
+                <source src="/assets/video/MAKE_UP_5.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="description">
+                <h3>Every product has a story, and mmy job is to bring it  to life</h3>
+                <p>Through 3D animations and visualizatins, i urn ideas nto visual experiences tha connect and nspirate.</p><br>
+                <div class="readMore">
+                    <a href="./product-one.html">Read more...</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="proyecto2">
+            <video class="video" width="300px" controls loop onmouseover="this.play()" onmouseout="this.pause();" muted>
+                <source src="/assets/video/NIKE_3D_REEL.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="description2">
+                <h3>Every product has a story, and mmy job is to bring it  to life</h3>
+                <p>Through 3D animations and visualizatins, i urn ideas nto visual experiences tha connect and nspirate.</p><br>
+                <div class="readMore">
+                    <a href="./product-two.html">Read more...</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="proyecto3">
+            <video width="300px" controls loop onmouseover="this.play()" onmouseout="this.pause();" muted>
+                <source src="/assets/video/REEL_INSTAGRAM.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="description3">
+                <h3>Every product has a story, and mmy job is to bring it  to life</h3>
+                <p>Through 3D animations and visualizatins, i urn ideas nto visual experiences tha connect and nspirate.</p><br>
+                <div class="readMore">
+                    <a href="./product-three.html">Read more...</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="proyecto4">
+            <video class="#" width="300px" controls loop onmouseover="this.play()" onmouseout="this.pause();" muted>
+                <source src="/assets/video/SHOE_3D_ANIMATION_Development_of_Previews.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="description4">
+                <h3>Every product has a story, and mmy job is to bring it  to life</h3>
+                <p>Through 3D animations and visualizatins, i urn ideas nto visual experiences tha connect and nspirate.</p><br>
+                <div class="readMore">
+                    <a href="./product-four.html">Read more...</a>
+                </div>
+            </div>
+        </article>
+          
+    </section>
+    <!-- Fin contenido -->
+
+</div>
+<!--fin container  -->
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        let header = document.querySelector("header");
+        header.classList.toggle("abajo",window.scrollY>0)
+    } )
+</script>
+</body>
+</html>
