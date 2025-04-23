@@ -162,7 +162,6 @@
     }
 
     .proyecto1{
-        border: 1px solid orange;
         height: 800px;
         display: grid;
         grid-template-columns: 1fr;
@@ -175,7 +174,6 @@
     }
 
     .proyecto2{
-        border: 1px solid orange;
         height: 800px;
         display: grid;
         grid-template-columns: 1fr;
@@ -189,7 +187,6 @@
     }
 
     .description2{
-        border: 1px solid orange;
         width: 100%;
     }
 
@@ -199,7 +196,6 @@
     }
 
     .proyecto3{
-        border: 1px solid orange;
         height: 800px;
         display: grid;
         grid-template-columns: 1fr;
@@ -214,18 +210,15 @@
         
     .description3{
         margin: 0 auto;
-        border: 1px solid orange;
         width: 100%;
     }
 
     
     .description2{
-        border: 1px solid orange;
         width: 100%;
     }
 
     .proyecto4{
-        border: 1px solid orange;
         height: 700px;
         display: grid;
         grid-template-columns: 1fr;
@@ -252,7 +245,6 @@
 
     
     .proyecto1{
-        border: 1px solid orange;
         height: 800px;
         display: grid;
         grid-template-columns: 1fr;
