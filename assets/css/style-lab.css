@@ -1,4 +1,3 @@
-
 .link__lab::after{
     content: '';
     display: block;
@@ -20,3 +19,7 @@
     margin-left: 10px;
     background-color: transparent;    
 } 
+
+#content__lab{
+    margin-top: 130px;
+}

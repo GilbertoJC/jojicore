@@ -20,6 +20,10 @@
     background-color: transparent;    
 } 
 
+#content__portfolio{
+    margin-top: 130px;
+}
+
 .proyecto1{
     width: 60%;
     display: flex;
@@ -27,7 +31,7 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 20%;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 60px;    
 }
 
@@ -147,3 +151,131 @@
     font-size: 18px;
     color: #555;
 }
+
+
+/* ---------------   responsive style ------------------*/
+
+@media (max-width: 1215px) {
+    
+     #content__portfolio{
+        margin-top: 170px;
+    }
+
+    .proyecto1{
+        border: 1px solid orange;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .video{
+        margin: 0 auto;
+    }
+
+    .proyecto2{
+        border: 1px solid orange;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .description2{
+        grid-row: 2 / 3;
+    }
+
+    .description2{
+        border: 1px solid orange;
+        width: 100%;
+    }
+
+    .video{
+        
+        grid-row: 1 / 2;
+    }
+
+    .proyecto3{
+        border: 1px solid orange;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .description3 .video{
+       margin: 0 auto;
+       padding: 10px;
+    }
+        
+    .description3{
+        margin: 0 auto;
+        border: 1px solid orange;
+        width: 100%;
+    }
+
+    
+    .description2{
+        border: 1px solid orange;
+        width: 100%;
+    }
+
+    .proyecto4{
+        border: 1px solid orange;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .proyecto4 .video{
+        margin: 0 auto;
+        padding: 10;
+    }
+
+    .description{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    }
+
+/* --------------------------------------------------------- */
+
+@media (max-width: 815px){
+
+    
+    .proyecto1{
+        border: 1px solid orange;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .video{
+        margin: 0 auto;
+    }
+    
+    .proyecto2{
+        height: 830px;
+        margin-bottom: 10px;
+    }
+
+    
+    .proyecto2 .video{
+        margin: 0 auto;
+    }
+
+}
+
+
+
+

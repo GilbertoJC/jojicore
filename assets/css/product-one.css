@@ -1,4 +1,26 @@
+.link__blog::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-left: 10px;
+    background-color: black;
+    
+    
+} 
 
+
+
+.link__blog::before{
+    content: '';
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 3px;
+    margin-left: 10px;
+    background-color: transparent;    
+} 
 /* estilos de contenedor general */
 #content{
     margin-top: 90px;
